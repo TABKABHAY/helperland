@@ -1,0 +1,458 @@
+<html>
+
+<head>
+    <style>
+        .flx {
+            display: flex;
+        }
+
+        .header {
+            flex-wrap: wrap;
+            background-color: #1FB6FF;
+            display: flex;
+            align-items: center;
+        }
+
+        .helperland {
+            font-size: large;
+            color: white;
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+            border-spacing: 3px;
+            position: sticky;
+            left: 80%;
+            padding: 20px 20px;
+        }
+
+        .login a {
+            padding: 10px 10px;
+        }
+
+        .usermanagfull {
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin: 1px 1px;
+        }
+
+        .menu {
+            left: 0px;
+            width: 273px;
+            height: auto;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 2px 0px 6px #0000001A;
+            opacity: 1;
+        }
+
+        .menu li {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 2px 0px 6px #0000001A;
+            color: #000;
+            border: solid 1px rgb(187, 185, 185);
+            list-style: none;
+            padding: 20px 20px;
+        }
+
+        .rightdiv {
+            background-color: rgb(247, 247, 247);
+            position: sticky;
+            width: 100%;
+            height: auto;
+        }
+
+        .usermanagdiv {
+            margin: 10px 10px;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .usermanagheder {
+            text-align: left;
+            letter-spacing: 0px;
+            color: #646464;
+            opacity: 1;
+        }
+
+        .addnew {
+            background-color: #1FB6FF;
+            border-radius: 4px 4px;
+            position: absolute;
+            left: 80%;
+            width: 122px;
+            height: 36px;
+            padding: 2px 5px
+        }
+
+        .userbutton {
+            color: white;
+        }
+
+        .detl {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #E1E1E1;
+            height: auto;
+            margin: 15px 15px;
+            padding: 10px 10px;
+            opacity: 1;
+        }
+
+        .detl input {
+            color: #A0A0A0;
+            border-radius: 4px;
+            margin: 20px 45px;
+            width: 205px;
+            height: 46px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #DEDDDD;
+            opacity: 1;
+        }
+
+        .detl button {
+            margin: 20px 28px;
+            opacity: 1;
+        }
+
+        .search {
+            border: 1px solid #DEDDDD;
+            border-radius: 4px;
+            width: 84px;
+            height: 46px;
+            color: white;
+            background-color: #1FB6FF;
+            border: 0px
+        }
+
+        .clear {
+            border-radius: 4px;
+            width: 84px;
+            height: 46px;
+            color: rgb(0, 0, 0);
+            background-color: #ffffff;
+            border: 1px solid #DEDDDD;
+        }
+
+        .intfs {
+            margin: 10px 10px;
+            border: 1px solid gainsboro;
+        }
+
+        .table1 {
+            width: 100%;
+            margin-left: 0px;
+            border-collapse: collapse;
+        }
+
+        .row1 {
+            width: 100%;
+        }
+
+        .table1 tr {
+            position: relative;
+            flex-wrap: wrap;
+            border-bottom: 1px solid
+        }
+
+        .table1 thead td {
+            background: #dddfe0 0% 0% no-repeat padding-box;
+            font-size: 15px;
+            padding: 15px 15px;
+        }
+
+        .table1 tbody td {
+            align-items: center;
+            padding: 15px 15px;
+        }
+
+        .cancl {
+            background: #67B644 0% 0% no-repeat padding-box;
+        }
+
+        .show {
+            display: flex;
+            align-items: center;
+        }
+
+        .pagination {
+            display: flex;
+            position: sticky;
+            left: 80%;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 12px 12px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid rgb(7, 7, 7);
+            margin: 0 px;
+        }
+
+        .pagination a.active {
+            background-color: #3a3939;
+            color: white;
+            border: 1px solid #969796;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="helperland">
+            <h1>helperland</h1>
+        </div>
+        <div class="login">
+            <a href="#login"><img src="admin-user.png" alt=""></a>
+            <a href="#login">name</a>
+            <a href="#logout"><img src="logout.png"></a>
+        </div>
+    </header>
+    <section class="usermanagfull">
+        <div class="menu">
+            <li>Service Management</li>
+            <li>Role Management</li>
+            <li>Coupon Code Management</li>
+            <li>Escalation Management</li>
+            <li>Service Request</li>
+            <li>Service Provider</li>
+            <li>User Management</li>
+            <li>Finance Module</li>
+            <li>Zip code Management</li>
+            <li>Rating Management</li>
+            <li>Inquiry Management</li>
+            <li>Newsletter Management</li>
+            <li>Content Management</li>
+        </div>
+        <section class="rightdiv">
+            <div class="usermanagdiv">
+                <div class="usermanagheder">
+                    <h2>User Management</h2>
+                </div>
+                <div class="addnew">
+                    <a class="userbutton" href="#new user"><img src="add.png">Add New User</a>
+                </div>
+            </div>
+            <div class="detl flx">
+                <div class="">
+                    <input type="name" placeholder="User name">
+                    <input type="name" placeholder="User role">
+                    <input type="number" placeholder="+49 Phone number">
+                    <input type="number" placeholder="Zipcode">
+                    <button class="search" value="">search</button>
+                    <button class="clear" value="">clear</button>
+                </div>
+            </div>
+            </div>
+            <section class="intfs">
+                <table class="table1">
+                    <thead class="">
+                        <tr class="">
+                            <td>User Name <img src="sort.png" alt="date"></td>
+                            <td>User type</td>
+                            <td>Role</td>
+                            <td>Postal Code<img src="sort.png" alt="date"></td>
+                            <td>City</td>
+                            <td>Radius<img src="sort.png" alt="date"></td>
+                            <td>User Satatus<img src="sort.png" alt="date"></td>
+                            <td>Action</td>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button><img src="group-38.png" alt="date"></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button><img src="group-38.png" alt="date"></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button><img src="group-38.png" alt="date"></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button></button></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td> Call Center</td>
+                            <td>Inquiry Manager</td>
+                            <td>123456</td>
+                            <td>Berlin</td>
+                            <td> </td>
+                            <td>
+                                <button class="cancl">submit</button>
+                            </td>
+                            <td><button></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <section class="">
+                    <div class="flx show">
+                        <div>
+                            <h4>show entries</h4>
+                        </div>
+                        <div>
+                            <select style="width: 50px; height: 30px; margin-left: 12px;">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <div class="pagination">
+                            <a href="#">«</a>
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">»</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+        </section>
+    </section>
+
+
+</body>
+
+</html>
