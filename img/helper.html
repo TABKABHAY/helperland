@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <style>
         .hdr1 {
@@ -10,139 +11,144 @@
             /* background-color: black; */
             position: sticky;
         }
-
         .head {
-            align-items: center;
-            padding: 10px;
-            background-color: black;
-            display: flex;
-            /* width: 100%; */
-            flex-wrap: wrap;
-        }
-
-        .imhlogo {
-            padding: 10px;
-            width: 20%;
-            min-width: 100px;
-            max-width: 200px;
-        }
-
-        .leftblock {
-            padding: 10px;
-            align-items: center;
-            flex-wrap: wrap;
-            display: flex;
-            justify-content: space-between;
-            /* word-spacing: 50px; */
-            /* margin-top: -70px; */
-            /* margin-left: 79%; */
-            /* padding-left: 620px; */
-            width: 80%;
-            /* height: 40px; */
-            /* opacity: 1; */
-            /* justify-items: flex-end; */
-        }
-
-        .pargaraph {
-            color: #E4EBF0;
-            text-decoration: none;
-        }
-
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 10px; */
+    background-color: black;
+    display: flex;
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+img.logo {
+    /* width: 100%; */
+    padding: 10px;
+    max-width: 100px;
+}
+.leftblock {
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    /* word-spacing: 50px; */
+    /* margin-top: -70px; */
+    /* margin-left: 79%; */
+    /* padding-left: 620px; */
+    width: 80%;
+    /* height: 40px; */
+    /* opacity: 1; */
+    /* justify-items: flex-end; */
+}.pargaraph {
+    margin: 10px;
+    color: #E4EBF0;
+    text-decoration: none;
+}
         .login {
-            /* top: 43px; */
-            /* left: 1210px; */
-            width: auto;
-            height: auto;
-            background: #FFFFFF00 0% 0% no-repeat padding-box;
-            padding: 5px;
-            border: 1px solid #FFFFFF80;
-            border-radius: 20px;
-            color: #E4EBF0;
-            opacity: 1;
-        }
-
-        .page1 {
-            background-size: cover;
-            padding: 10px 10px;
-            /* position: absolute; */
-            height: 100%;
-            background-image: url(Landing-Page-background-image.png);
-            /* width: 100%; */
-        }
-
-        .Lorem {
-            color: white;
-            top: 100px;
-            position: relative;
-            padding: 10px;
-            /* margin-top: 8%; */
-            /* position: absolute; */
-            /* text-align: left; */
-            /* letter-spacing: 0px; */
-            /* color: #FFFFFF; */
-            /* opacity: 1; */
-            /* margin-left: 75px; */
-        }
-
-        .loremhead {
-            font-size: 50px;
-            /* background: none; */
-            /* color: white; */
-            /* text-align: center; */
-            /* letter-spacing: 0px; */
-            /* color: #FFFFFF; */
-            /* opacity: 1; */
-            padding: 10px;
-        }
+    margin: 10px;
+    /* top: 43px; */
+    /* left: 1210px; */
+    /* width: auto; */
+    /* height: auto; */
+    background: #FFFFFF00 0% 0% no-repeat padding-box;
+    padding: 5px;
+    border: 1px solid #FFFFFF80;
+    border-radius: 20px;
+    color: #E4EBF0;
+    opacity: 1;
+}
+.page1 {
+    background-size: cover;
+    /* background-size: auto; */
+    padding: 10px 10px;
+    /* position: relative; */
+    /* height: 100%; */
+    background-image: url(Landing-Page-background-image.png);
+    /* width: 100%; */
+}
+.Lorem {
+    color: white;
+    /* top: 100px; */
+    /* position: relative; */
+    padding: 10px;
+    margin-top: 8%;
+    /* position: absolute; */
+    /* text-align: left; */
+    /* letter-spacing: 0px; */
+    /* color: #FFFFFF; */
+    /* opacity: 1; */
+    /* margin-left: 75px; */
+}
+.loremhead {
+    font-size: 200%;
+    /* background: none; */
+    /* color: white; */
+    /* text-align: center; */
+    /* letter-spacing: 0px; */
+    /* color: #FFFFFF; */
+    /* opacity: 1; */
+    padding: 10px;
+}
 
         .loremdtl {
             padding-left: 20px;
         }
 
         .letsbok {
-            top: 130px;
-            /* width: 20%; */
-            position: relative;
-            padding: 10px;
-            /* align-items: center; */
-            text-align: center;
-        }
-
-        button.letsbookbutton {
-            width: 20%;
-            /* display: inline-block; */
-            /* text-align: center; */
-            color: white;
-            padding: 10px;
-            background-color: #00607259;
-            border-radius: 40px;
-            border: 1px solid white;
-        }
+    margin-top: 80px;
+    /* margin: 100px; */
+    /* top: 130px; */
+    /* width: 20%; */
+    /* position: relative; */
+    padding: 10px;
+    /* align-items: center; */
+    text-align: center;
+}
+button.letsbookbutton {
+    /* width: 20%; */
+    /* display: inline-block; */
+    /* text-align: center; */
+    color: white;
+    padding: 10px;
+    background-color: #00607259;
+    border-radius: 40px;
+    border: 1px solid white;
+}
 
         .POSTCOD {
-            /* max-width: fit-content; */
-            text-align: center;
-            align-items: center;
-            /* max-width: 700px; */
-            position: relative;
-            top: 150px;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            padding: 20px 20px;
-            /* width: 10%; */
-            /* height: 10%; */
-        }
+    align-items: baseline;
+    margin-top: 100px;
+    /* max-width: fit-content; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* max-width: 700px; */
+    /* position: relative; */
+    /* top: 150px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    /* width: 10%; */
+    /* height: 10%; */
+}
 
-        .im1 {
-            /* height: 100%; */
-            /* width: 100%; */
-            padding: 10px;
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* align-items: center; */
-            /* flex-wrap: wrap; */
-        }
+.im1 {
+    padding: 10px;
+    text-align: center;
+    /* align-items: center; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* padding: 10px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+}
+.im1 p {
+    color: white;
+    margin-top: 20px;
+    /* margin: 0px; */
+}
 
         .whyhelp {
             /* text-align: center; */
@@ -159,11 +165,11 @@
         }
 
         h2.whyhelphead {
-            color: #4F4F4F;
-            text-align: center;
-            font-weight: bold;
-            font-size: 30px;
-        }
+    color: #4F4F4F;
+    text-align: center;
+    font-weight: bold;
+    /* font-size: 200%; */
+}
 
         section.expr {
             padding: 30px;
@@ -254,25 +260,15 @@
             padding: 1px;
             font-size: 30px;
         }
-
         .fr1blog {
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 0px 0px 30px #e4ebf0;
-            border-radius: 4px;
-            box-sizing: border-box;
-            padding: 10px;
-            width: 357px;
-        }
-
-        .fr1blog {
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 0px 0px 30px #e4ebf0;
-            border-radius: 4px;
-            box-sizing: border-box;
-            padding: 10px;
-            width: 357px;
-        }
-
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 30px #e4ebf0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+}
         .third {
             padding: 10px;
             background-color: #F4F5F8;
@@ -291,23 +287,17 @@
             color: #413636;
             opacity: 1;
         }
-
         .WOCS {
-            margin: 20px;
-            flex-flow: wrap;
-            width: 300px;
-            padding: 30px;
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 0px 0px 30px #e4ebf0;
-            /* border-radius: 4px; */
-            border-left: #006072 3px solid;
-            /* background: #FFFFFF 0% 0% no-repeat padding-box; */
-            /* box-shadow: 0px 0px 30px #e4ebf0; */
-            border-radius: 4px;
-            box-sizing: border-box;
-            /* padding: 10px; */
-            /* width: 357px; */
-        }
+    margin: 10px;
+    border-left: #006072 3px solid;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 30px #e4ebf0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+}
 
         .ljl {
             /* justify-content: space-evenly; */
@@ -431,7 +421,6 @@
             border-radius: 20px;
             opacity: 1;
         }
-
         footer.helpfooter {
             /* padding: 10px; */
             background-color: black;
@@ -456,7 +445,7 @@
             display: flex;
             padding: 10px;
             justify-content: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
 
         .smalllogo {
@@ -538,6 +527,11 @@
             border-radius: 15px;
             border: 0px;
         }
+        .dwn
+        {
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -569,13 +563,16 @@
             <button class="letsbookbutton">let's book clener</button>
         </div>
         <div class="POSTCOD">
-            <div class="im1"><img class="im1pro" src="step-1.png" alt="logo"></div>
+            <div class="im1"><img class="im1pro" src="step-1.png" alt="logo"><p>Enter your postcode</p></div>
             <div class="im1"><img class="arrow123" src="step-arrow-1.png" alt="logo"></div>
-            <div class="im1"> <img class="im1pro" src="step-2.png" alt="logo"></div>
+            <div class="im1"> <img class="im1pro" src="step-2.png" alt="logo"><p>Select your plan</p></div>
             <div class="im1"><img class="arrow123" src="step-arrow-1-copy.png" alt="logo"></div>
-            <div class="im1"> <img class="im1pro" src="step-3.png" alt="logo"></div>
+            <div class="im1"> <img class="im1pro" src="step-3.png" alt="logo"><p>Pay securely online</p></div>
             <div class="im1"><img class="arrow123" src="step-arrow-1.png" alt="logo"></div>
-            <div class="im1"> <img class="im1pro" src="step-4.png" alt="logo"></div>
+            <div class="im1"> <img class="im1pro" src="step-4.png" alt="logo"><p>Enjoy amazing service</p></div>
+        </div>
+        <div class="dwn">
+            <a href=""><img src="group-18_5.png"></a>
         </div>
     </section>
 
@@ -768,4 +765,3 @@
 </body>
 
 </html>
-    
