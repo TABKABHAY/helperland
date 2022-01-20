@@ -1,190 +1,155 @@
-<!DOCTYPE html>
+<html>
 <title>
     prices
 </title>
 
 <head>
     <style>
-        .body {
-            height: auto;
+        .hdr1 {
+            /* flex-wrap: wrap; */
+            /* display: flex; */
             width: 100%;
-            place-items: auto;
+            /* height: 100%; */
+            /* padding: 10px; */
+            /* background-color: black; */
+            position: sticky;
         }
 
-        .first1 {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 70px;
-            background: #525252 0% 0% no-repeat padding-box;
-            opacity: 0.8;
+        .head {
+            justify-content: space-evenly;
+            align-items: center;
+            /* padding: 10px; */
+            background-color: black;
+            display: flex;
+            /* width: 100%; */
+            flex-wrap: wrap;
         }
 
-        .layoutt {
-            position: absolute;
-            top: 6px;
-            left: 15px;
-            width: 100%;
-            height: 60px;
-            opacity: 1;
+        img.logo {
+            /* width: 100%; */
+            padding: 10px;
+            max-width: 100px;
         }
 
-        .logo1 {
-            position: absolute;
-            top: 6px;
-            left: 15px;
-            width: 73px;
-            height: 54px;
-            opacity: 1;
-        }
-
-        .linktext {
-            color: #FFFFFF;
-            letter-spacing: normal;
-        }
-
-        .booknow {
-            position: absolute;
-            top: 12px;
-            left: 60%;
-            width: auto;
-            height: auto;
-            background: #29626D 0% 0% no-repeat padding-box;
-            border: 1px solid #FFFFFF80;
-            border-radius: 20px;
-            opacity: 1;
-        }
-
-        .pricesservices {
-            position: absolute;
-            top: 12px;
-            left: 65%;
-            width: auto;
-            height: auto;
-            opacity: 1;
-            background: #00607200 0% 0% no-repeat padding-box;
-            border: 1px solid #FFFFFF80;
-            border-radius: 20px;
-        }
-
-        .warrent {
-            position: absolute;
-            top: 12px;
-            left: 70%;
-            width: auto;
-            height: auto;
-            color: #FFFFFF;
-            opacity: 1;
-        }
-
-        .blog {
-            position: absolute;
-            top: 12px;
-            left: 75%;
-            width: auto;
-            height: auto;
-            color: #FFFFFF;
-            opacity: 1;
-        }
-
-        .contect {
-            position: absolute;
-            top: 12px;
-            left: 80%;
-            width: auto;
-            height: 20px;
-            color: #FFFFFF;
-            opacity: 1;
+        .leftblock {
+            padding: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            /* word-spacing: 50px; */
+            /* margin-top: -70px; */
+            /* margin-left: 79%; */
+            /* padding-left: 620px; */
+            width: 80%;
+            /* height: 40px; */
+            /* opacity: 1; */
+            /* justify-items: flex-end; */
         }
 
         .login {
-            position: absolute;
-            top: 12px;
-            left: 85%;
-            width: auto;
-            height: auto;
-            background: #29626D 0% 0% no-repeat padding-box;
+            margin: 10px;
+            /* top: 43px; */
+            /* left: 1210px; */
+            /* width: auto; */
+            /* height: auto; */
+            background: #FFFFFF00 0% 0% no-repeat padding-box;
+            padding: 5px;
             border: 1px solid #FFFFFF80;
             border-radius: 20px;
+            color: #E4EBF0;
             opacity: 1;
         }
 
-        .becomehelper {
-            position: absolute;
-            top: 12px;
-            left: 90%;
-            width: auto;
-            height: auto;
-            background: #29626D 0% 0% no-repeat padding-box;
-            border: 1px solid #FFFFFF80;
-            border-radius: 20px;
-            opacity: 1;
+        .pargaraph {
+            margin: 10px;
+            color: #E4EBF0;
+            text-decoration: none;
         }
 
         .image {
-            position: relative;
-            top: 70px;
+            /* position: relative; */
+            /* top: 70px; */
             width: 100%;
-            height: auto;
-            opacity: 1;
+            height: 100%;
+            /* opacity: 1; */
+        }
+
+        h1.center {
+            padding: 10px;
         }
 
         .center {
             text-align: center;
         }
 
-        .pricebox {
-            position: relative;
-            top: 50px;
-        }
 
         .pricestar {
-            position: relative;
-            top: 40px;
+            padding: 10px;
+            /* position: relative; */
+            /* top: 40px; */
+        }
+
+        section.timform {
+            padding: 10px;
+            text-align: -webkit-center;
         }
 
         .onetime {
-            position: relative;
-            top: 70px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 250px;
-            width: 400px;
+            /* position: relative; */
+            /* top: 70px; */
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            height: fit-content;
+            width: 100%;
+            max-width: 400px;
             border: 1px solid black;
         }
 
         .onetime1 {
             padding-top: 10px;
             height: 60px;
-            width: 100%;
+            /* width: 100%; */
             background-color: darkcyan;
         }
 
-        .extraservices {
-            position: relative;
-            top: 100px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 450px;
-            width: 1100px;
+        .formdata {
+            padding: 10px;
+        }
+
+
+
+        p.\32 0hrhr {
+            font-size: 140%;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        section.timform {
+            padding: 10px;
+            text-align: -webkit-center;
+        }
+
+        .pricestar {
+            padding: 10px;
+            /* position: relative; */
+            /* top: 40px; */
         }
 
         .extraimage {
-            position: relative;
+            flex-wrap: wrap;
+            padding: 10px;
+            /* position: relative; */
             display: flex;
             justify-content: space-evenly;
-            width: 100%;
-            height: 350px;
-            top: 5%;
+            /* width: 100%; */
+            /* top: 5%; */
             align-items: center;
         }
 
-        .imageextraserv {
-            padding-top: 50px;
-            width: 100px;
-            height: 100px;
-            opacity: 1;
+        .extraservicimg {
+            padding: 10px;
+            text-align: center;
         }
 
         .border {
@@ -195,159 +160,337 @@
             border-radius: 100%;
         }
 
-        .what-we-inc {
+        .imageextraserv {
+            padding-top: 50px;
+            width: 100px;
+            height: 100px;
+            opacity: 1;
+        }
+
+        .extraservicimg {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .whyhelper {
+            /* flex-wrap: wrap; */
+            padding: 10px;
+            /* position: relative; */
             display: flex;
             justify-content: space-evenly;
+            /* width: 100%; */
+            /* top: 5%; */
             align-items: center;
-            width: 1060px;
-            height: 600px;
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-            top: 130px;
-            flex-direction: column;
-            flex: 1;
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 0%;
-            background-color: rgb(238, 234, 234);
-            
         }
-        .fr1blog
-        {
-            position: relative;
+
+        .fr1blog {
+            /* position: relative; */
             margin: 8px;
-             border: 4px;
-             border-spacing: 4px;
-        }
-        .why-helperland
-        {
-            position: relative;
-            top: 170px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 400px;
-            width: 900px;
-            opacity: 1;
-        }
-        .sizae
-        {
-            font-size: 10px;
+            border: 4px;
+            border-spacing: 4px;
         }
 
-        .yreml {
-            margin-bottom: 20px;
-            height: auto;
-            margin-left: 25%;
-            width: 30%;
-            background: #c9cbd1 0% 0% no-repeat padding-box;
-            border: 1px solid #000000;
-            border-radius: 20px;
-            opacity: 1;
-
+        .thebstleft {
+            padding: 10px;
+            text-align: end;
         }
 
-        .submit {
-            margin-bottom: 20px;
-            margin-left: 20px;
-            height: auto;
+        .thebst {
+            padding: 10px;
+        }
+
+        .thebestpar {
+            padding: 10px;
+            max-width: 300px;
+        }
+
+        .thebstright {
+            padding: 10px;
+            text-align: left;
+        }
+
+
+
+        .news {
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        .info {
+            flex-flow: wrap;
+            margin: 0px;
+            justify-content: space-between;
+            /* margin-top: auto; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* flex-direction: row; */
+        }
+
+        .upbuttn {
+            background: #525252 0% 0% no-repeat padding-box;
+            /* opacity: 1; */
+            border: 0px solid;
+            border-radius: 100%;
+            /* margin: 0px; */
+            padding: 0px;
+            /* border-radius: 0px; */
+            /* background-color: black; */
+            /* border-radius: 100%; */
+        }
+
+
+        h5.getnewhed {
+            margin: 0px;
+            color: #4F4F4F;
+            text-align: center;
+            font-weight: bold;
+            /* font-size: 30px; */
+        }
+
+        button.pnklogo {
+            background-color: transparent;
+            /* padding: 10px; */
+            border: 0px;
+        }
+
+
+
+
+        .layer {
+            float: left;
+            /* margin-top: 0px; */
+            /* padding-left: 440px; */
+            /* padding-top: 0px; */
+            /* top: 3319px; */
+            /* left: 1427px; */
+            /* width: 63px; */
+            /* height: 63px; */
+            /* opacity: 1; */
+        }
+
+        .yoreml {
+            /* justify-content: space-between; */
+            /* padding: 10px; */
+            flex-wrap: wrap;
+        }
+
+        .rect {
+            padding: 10px;
             width: 20%;
-            background: #f39ca7 0% 0% no-repeat padding-box;
-            border: 1px solid #0a0a0a;
+            min-width: 80px;
+            border: 1px solid #565656;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .rect2 {
+            margin: 10px;
+            min-width: 55px;
+            width: 10%;
+            /* margin: 10px; */
+            color: white;
+            border: 0px;
+            padding: 10px;
+            /* margin-top: 0px; */
+            /* margin-left: 25px; */
+            /* padding-left: 0px; */
+            /* padding-right: 10px; */
+            /* top: 3365px; */
+            /* left: 858px; */
+            /* width: 88px; */
+            /* background: #FF7B6D 0% 0% no-repeat padding-box; */
+            /* border-radius: 20px; */
+            /* opacity: 1; */
+            /* height: 40px; */
+            background: #FF7B6D 0% 0% no-repeat padding-box;
             border-radius: 20px;
             opacity: 1;
+        }
 
-        }
-        .DD1 {
-            width: 100%;
-            display: flex;
-        }
-        .FFTR {
+        footer.helpfooter {
+            /* padding: 10px; */
             background-color: black;
-            width: 100%;
-            height: auto;
-        }
-            .UU1 {
-            padding-bottom: 12px;
-            margin-left: 35%;
-            width: 100%;
-            display: flex;
         }
 
-        .II1 {
-            padding-top: 30px;
-            margin-left: 75%;
-            display: flex;
+        .Rectangle-12 {
+            padding: 10px;
+            /* width: 1560px; */
+            /* height: 195px; */
+            /* margin: 53px 0 0; */
+            /* padding: 27px 0 0; */
+            /* background-color: #111; */
+            padding-left: 40px;
+            padding-right: 40px;
         }
 
+        .ftrnav {
+            /* padding: 10px; */
+            align-items: center;
+            flex-wrap: wrap;
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+
+
+        .homeabout {
+            /* max-block-size: fit-content; */
+            /* max-width: 50px; */
+            /* flex-wrap: wrap; */
+            display: contents;
+            /* align-items: center; */
+            /* padding: 5px; */
+            /* justify-content: space-evenly; */
+            /* display: flex; */
+            /* color: white; */
+            /* display: contents; */
+            /* justify-content: space-between; */
+        }
+
+
+        .homeabout a {
+            text-decoration: none;
+            color: white;
+            /* size: a4; */
+            font-size: x-small;
+        }
+
+
+
+        .social {
+            /* background: #CCCCCC 0% 0% no-repeat padding-box; */
+            /* padding: 10px; */
+            margin: 10px;
+            /* justify-content: space-between; */
+            /* display: flex; */
+            flex-wrap: wrap;
+        }
+
+        .insta {
+            height: 18px;
+            width: 18px;
+            padding: 5px;
+            /* margin-top: -65px; */
+            /* margin-left: 1320px; */
+            /* display: flex; */
+            /* flex-direction: column; */
+        }
+
+        .facebook {
+            height: 18px;
+            width: 9px;
+            padding: 5px;
+            /* margin-top: -65px; */
+            /* margin-left: 1320px; */
+            /* display: flex; */
+            /* flex-direction: column; */
+        }
+
+        .privicy {
+            align-items: center;
+            display: flex;
+            padding: 10px;
+            background-color: #292929;
+            justify-content: space-around;
+        }
+
+        p.privicypolicy {
+            margin: 0px;
+            color: #F1F1F1;
+            text-align: center;
+        }
+
+        button.ok {
+            width: 70px;
+            padding: 10px;
+            background-color: yellow;
+            border-radius: 15px;
+            border: 0px;
+        }
     </style>
 </head>
 
 <body>
-    <header class="first1">
-        <section class="layoutt">
-            <div><img class="logo1" src="logo-large.png" /></div>
-            <div class="booknow"><a class="linktext" href="#book">book clener</a></div>
-            <div class="pricesservices"><a class="linktext" href="#prices">prices</a></div>
-            <a href="#wrrent" class="warrent">warrent</a>
-            <a href="#blog" class="blog">blog </a>
-            <a href="#contact" class="contect">Contact</a>
-            <div class="login"><a class="linktext" href="#login">login</a></div>
-            <div class="becomehelper"><a class="linktext" href="#become a helper">becomehelper</a></div>
-        </section>
+    <header class="hdr1">
+        <div class="head">
+            <div class="imhlogo"><img src="logo-large.png" alt="logo" class="logo"></div>
+            <div class="leftblock">
+                <button class="login">bookcleaner</button>
+                <a href="" class="pargaraph">prices</a>
+                <a href="" class="pargaraph">ourguarantee</a>
+                <a href="" class="pargaraph">blog</a>
+                <a href="" class="pargaraph">Contact</a>
+                <button class="login">login</button>
+                <button class="login">becomehelper</button>
+                <div class="hamburger-click-area js-hamburger">
+                    <div class="hamburger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <img class="image" src="group-18.png" alt="">
-    <section class="center">
-        <h1 class="pricebox">PRICES</h1>
-        <img class="pricestar" src="yellow-small-star.png" />
-    </section>
-    <div class="onetime">
-        <div class="onetime1">
-            <h1 class="center">ONE TIME</h1>
-        </div>
-        <div class="center">
-            <h2 class="center"> $20/hr</h2>
-            <input type="checkbox">
-            <label>Lower prices</label><br><br>
-            <input type="checkbox">
-            <label>Easy online & secure payment</label><br><br>
-            <input type="checkbox">
-            <label>Easy amendment</label><br>
-        </div>
-    </div>
-    <div class="extraservices center">
-        <h1 class="center"> Extra services</h1>
-        <img class="center" src="yellow-small-star.png" />
+    <section class="content">
+        <img class="image" src="group-18.png" alt="">
+        <h1 class="pricebox center">PRICES
+            <br>
+            <img class="pricestar center" src="separator.png">
+        </h1>
+        <section class="timform">
+            <div class="onetime">
+                <div class="onetime1">
+                    ONE TIME
+                </div>
+                <div class="formdata">
+                    <p class="20hrhr">$20/hr</p>
+                    <input type="checkbox">
+                    <label>Lower prices</label><br><br>
+                    <input type="checkbox">
+                    <label>Easy online &amp; secure payment</label><br><br>
+                    <input type="checkbox">
+                    <label>Easy amendment</label><br>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="pricebox center">Extra Services
+            <br>
+            <img class="pricestar center" src="separator.png">
+        </h1>
         <div class="extraimage">
-            <div>
+            <div class="extraservicimg">
                 <div class="border"><img class="imageextraserv" src="3.png" alt=""></div>
                 <div><br>
                     <h2>inside cabinet</h2>
                     <p>30 minutes</p>
                 </div>
             </div>
-            <div>
+            <div class="extraservicimg">
                 <div class="border"><img class="imageextraserv" src="5.png" alt=""></div>
                 <div><br>
                     <h2>inside cabinet</h2>
                     <p>30 minutes</p>
                 </div>
             </div>
-            <div>
+            <div class="extraservicimg">
                 <div class="border"><img class="imageextraserv" src="4.png" alt=""></div>
                 <div><br>
                     <h2>inside cabinet</h2>
                     <p>30 minutes</p>
                 </div>
             </div>
-            <div>
+            <div class="extraservicimg">
                 <div class="border"><img class="imageextraserv" src="2.png" alt=""></div>
                 <div><br>
                     <h2>inside cabinet</h2>
                     <p>30 minutes</p>
                 </div>
             </div>
-            <div>
+            <div class="extraservicimg">
                 <div class="border"><img class="imageextraserv" src="1.png" alt=""></div>
                 <div><br>
                     <h2>inside cabinet</h2>
@@ -355,94 +498,115 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="what-we-inc center">
-        <div><br><br>
-            <h1>what we include in cleaning</h1>
-            <img class="" src="yellow-small-star.png" />
-        </div>
+
+        <h1 class="pricebox center">what we include in cleaning
+            <br>
+            <img class="pricestar center" src="separator.png">
+        </h1>
         <div class="extraimage">
             <div class="fr1blog">
                 <img src="group-18_3.png" alt="Bedroom" style="width:100%">
-                <h2>Bedroom and Live Room</h2>
-                <p>Dust all accessible surfaces<br> Wipe down all mirrors and glass fixtures <br>Clean all floor surfaces<br> Take out garbage and recycling</p>
+                <h2 class="center">Bedroom and Live Room</h2>
+                <p class="center">Dust all accessible surfaces<br> Wipe down all mirrors and glass fixtures <br>Clean
+                    all floor surfaces<br> Take out garbage and recycling</p>
             </div>
 
             <div class="fr1blog">
                 <img src="group-18_4.png" alt="Bathroom" style="width:100%;">
-                <h2>Bathroom</h2>
-                <p class="center">Wash and sanitize the toilet, shower, tub, sink<br> Dust all accessible surfaces<br> Wipe down all mirrors and glass fixtures<br> Take out garbage and recycling</p>
+                <h2 class="center">Bathroom</h2>
+                <p class="center">Wash and sanitize the toilet, shower, tub, sink<br> Dust all accessible surfaces<br>
+                    Wipe down all mirrors and glass fixtures<br> Take out garbage and recycling</p>
             </div>
 
             <div class="fr1blog">
                 <img src="group-18_2.png" alt="Kitchen" style="width:100%">
-                <h2>Kitchen</h2>
-                <p>Dust all accessible surfaces<br> Wipe down all mirrors and glass fixtures <br>Clean all floor surfaces<br> Take out garbage and recycling</p>
+                <h2 class="center">Kitchen</h2>
+                <p class="center">Dust all accessible surfaces<br> Wipe down all mirrors and glass fixtures <br>Clean
+                    all floor surfaces<br> Take out garbage and recycling</p>
             </div>
 
         </div>
-    </div>
-    <div class="why-helperland center sizae">
-        <h1 class=>Why Helperland</h1>
-        <img class="center" src="yellow-small-star.png"/>
-        <div class="extraimage">
-        <div>
-        <div style="width: 300px;"><h5>Experienced and vetted professionals</h5>
-            <p>dominate the industry in scale and scope with an adaptable, extensive network that consistently delivers exceptional results.</p>
-        </div>
-        <div style="width: 300px;"><h5>Dedicated customer service</h5>
-            <p>dominate the industry in scale and scope with an adaptable, extensive network that consistently delivers exceptional results.</p>
-        </div>
-        </div>
-        <div>
-            <img src="the-best-img-1.png" alt="the best cleaning">
-        </div>
+        <h1 class="pricebox center">Why Helperland
+            <br>
+            <img class="pricestar center" src="separator.png">
+        </h1>
 
-        <div>
-            <div style="width: 300px;"><h5>Every cleaning is insured</h5>
-            <p>dominate the industry in scale and scope with an adaptable, extensive network that consistently delivers exceptional results.</p>
-        </div>
-        <div style="width: 300px;">><h5>Secure online payment</h5>
-            <p>dominate the industry in scale and scope with an adaptable, extensive network that consistently delivers exceptional results.</p>
-        </div>
-        </div>
-    </div>
-    <h1 class="center"></h1>
-    <section>
-        <h1 class="center">GET OUR NEWSKETTER</h1>
-        <div class="DD1">
-            <div class="yreml">
-                <h1 class="center">ADD YOUR EMAIL</h1>
+        <div class="whyhelper">
+            <div class="thebstleft">
+                <div class="thebestpar">
+                    <h5>Experienced and vetted professionals</h5>
+                    <p>dominate the industry in scale and scope with an adaptable, extensive network that consistently
+                        delivers exceptional results.</p>
+                </div>
+                <div class="thebestpar">
+                    <h5>Dedicated customer service</h5>
+                    <p>dominate the industry in scale and scope with an adaptable, extensive network that consistently
+                        delivers exceptional results.</p>
+                </div>
             </div>
-            <div class="submit">
-                <h1 class="center">SUBMIT</h1>
+            <div class="thebst">
+                <img src="the-best-img-1.png" alt="the best cleaning">
             </div>
 
+            <div class="thebstright">
+                <div class="thebestpar">
+                    <h5>Every cleaning is insured</h5>
+                    <p>dominate the industry in scale and scope with an adaptable, extensive network that consistently
+                        delivers exceptional results.</p>
+                </div>
+                <div class="thebestpar">
+                    <h5>Secure online payment</h5>
+                    <p>dominate the industry in scale and scope with an adaptable, extensive network that consistently
+                        delivers exceptional results.</p>
+                </div>
+            </div>
         </div>
 
+        <div class="getournews">
+
+            <div class="news">
+                <div class="info">
+                    <button class="upbuttn">
+                        <img class="upbuttnimg" src="down-arrow.png">
+                    </button>
+                    <h5 class="getnewhed">GET OUR NEEWS ENTER</h5>
+                    <button class="pnklogo"> <img class="layer" src="layer-598.png" alt=""></button>
+                </div>
+                <div class="yoreml">
+                    <input type="email" class="rect" placeholder="your email">
+                    <button class="rect2">Submit</button>
+
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <footer class="FFTR">
-        <div class="II1">
-            <img class="" src="ic-facebook.png" alt="" data-image-width="9" data-image-height="18">
-            <img class="" src="ic-instagram.png" alt="" data-image-width="20" data-image-height="20">
+
+    <footer class="helpfooter">
+        <div class="Rectangle-12">
+            <div class="ftrnav">
+                <img class="smalllogo" src="logo-small.png">
+                <div class="homeabout">
+                    <a href="" class="">HOME</a>
+                    <a href="" class="">ABOUT</a>
+                    <a href="" class="">TESTIMONIALS</a>
+                    <a href="" class="">FAQS</a>
+
+                    <a href="" class="">INSURANCE POLICY</a>
+                    <a href="" class="">IMPRESSUM</a>
+                    <a href="" class="">INSURANCE</a>
+                </div>
+                <div class="social">
+                    <img class="insta" src="ic-instagram.png" alt="">
+                    <img class="facebook" src="ic-facebook.png" alt="">
+                </div>
+            </div>
         </div>
-        <li><img src="footer-logo.png" alt=""></li>
-        <ul class="UU1">
-            <li class=""><a class="" href="task1.html" style="padding: 10px 18px;">Home</a>
-            </li>
-            <li class=""><a class=" active" href="" style="padding: 10px 18px;">About</a>
-            </li>
-            <li class=""><a class="" href="" style="padding: 10px 18px;">Trestimonial</a>
-            </li>
-            <li class=""><a class="" href="" style="padding: 10px 18px;">FSQ</a>
-            </li>
-            <li class=""><a class="" style="padding: 10px 18px;">insurance policy</a>
-            </li>
-            <li class=""><a class="" style="padding: 10px 18px;">impressum</a>
-            </li>
-        </ul>
-        </div>
+        <div class="privicy">
+            <p class="privicypolicy">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nunc libero, ac malesuada ligula
+                aliquam ac.<a href=""> Privacy Policy
+                </a></p>
+            <button class="ok">OK!</button>
         </div>
     </footer>
 </body>
