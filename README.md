@@ -1,2 +1,2 @@
 # helperland
-just place each file into img folder and every html file is ready to work
+just place each file into one folder and every html file is ready to work
