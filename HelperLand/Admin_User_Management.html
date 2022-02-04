@@ -1,0 +1,489 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style/admin_user_management.css">
+    <link rel="stylesheet" href="style/adminpart_header.css">
+    <link rel="image" href="image">
+    <link rel="script" href="script">
+</head>
+<body>
+
+    <header class="hdr1">
+        <div class="head">
+            <div class="imhlogo"><a href="Homepage.html"><img src="image/logo-large.png" alt="logo" class="logo"></a></div>
+            <div class="leftblock">
+                <a href="" class="belluser"><img src="image/admin-user.png" class="bell"></a>
+                <a href="" class="pargaraph">name</a>
+                <a href="" class="pargaraph"><img src="image/logout.png" class="bell"></a>
+               </div>
+            <div class="hembg">
+                <button onclick="w3_open()">☰</button>
+            </div>
+        </div>
+        <!-- !PAGE CONTENT header -->
+        <!-- Sidebar -->
+        <div class="navfix nevdata" onclick="document.getElementById('nevdata').style.display='none'">
+            <div class="rightnev w3-sidebarnew w3-bar-block w3-border-right" id="mySidebar" style="display:none;">
+                <button onclick="w3_close()" class="w3-bar-item w3-large">Close  × </button>
+                <li href="#" class="w3-bar-item w3-button"><img src="image/admin-user.png" class="bell"></li>
+                <li href="#" class="w3-bar-item w3-button">name</li>
+                <li href="#" class="w3-bar-item w3-button"><img src="image/logout.png" class="bell"></li>
+                <li href="#" class="w3-bar-item w3-button"><h3>DASH BOARD</h3></li>
+                <li href="#" class="w3-bar-item w3-button">Service Management</li>
+                <li href="#" class="w3-bar-item w3-button">Role Management</li>
+                <li class="w3-bar-item w3-button dropdown">
+                    Coupon Code Management
+                                <img src="image/keyboard-right-arrow-button.png">
+                            <div class="dropdown-content">
+                                <a href="#">Coupon Codes</a>
+                                <a href="#"> Usage History</a>
+                            </div>
+                </li>
+                <li href="#" class="w3-bar-item w3-button">Escalation Management</li>
+                <li href="#" class="w3-bar-item w3-button">Service Request</li>
+                <li href="#" class="w3-bar-item w3-button">Service Provider</li>
+                <li href="#" class="w3-bar-item w3-button">User Management</li>
+                <li class="w3-bar-item w3-button dropdown">
+                    Finance Module
+                          <img src="image/keyboard-right-arrow-button.png">
+                      <div class="dropdown-content">
+                          <a href="#">All Transactions</a>
+                          <a href="#">Generate Payment</a>
+                          <a href="#">Customer Invoices</a>
+                      </div>
+              </li>
+                <li href="#" class="w3-bar-item w3-button">Zip code Management</li>
+                <li href="#" class="w3-bar-item w3-button">Rating Management</li>
+                <li href="#" class="w3-bar-item w3-button">Inquiry Management</li>
+                <li href="#" class="w3-bar-item w3-button">Newsletter Management</li>
+                <li class="w3-bar-item w3-button dropdown">
+                    Content Management
+                         <img src="image/keyboard-right-arrow-button.png">
+                     <div class="dropdown-content">
+                         <a href="#">Blog</a>
+                         <a href="#">FAQs</a>
+                     </div>
+                 </li>
+            </div>
+        </div>
+        <!-- Page Content -->
+</header>
+
+<section class="usermanagfull">
+    <div class="leftnav">
+    <ul>
+        <li>Service Management</li>
+        <li>Role Management</li>
+        <li class="dropdown">
+            Coupon Code Management
+                    <img src="image/keyboard-right-arrow-button.png">
+                <div class="dropdown-content">
+                    <a href="#">Coupon Codes</a>
+                    <a href="#"> Usage History</a>
+                </div>
+        </li>
+        <li>Escalation Management</li>
+        <li>Service Request</li>
+        <li>Service Provider</li>
+        <li>User Management</li>
+        <li class="dropdown">
+              Finance Module
+                    <img src="image/keyboard-right-arrow-button.png">
+                <div class="dropdown-content">
+                    <a href="#">All Transactions</a>
+                    <a href="#">Generate Payment</a>
+                    <a href="#">Customer Invoices</a>
+                </div>
+        </li>
+        <li>Zip code Management</li>
+        <li>Rating Management</li>
+        <li>Inquiry Management</li>
+        <li>Newsletter Management</li>
+        <li class="dropdown">
+           Content Management
+                <img src="image/keyboard-right-arrow-button.png">
+            <div class="dropdown-content">
+                <a href="#">Blog</a>
+                <a href="#">FAQs</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <section class="rightdiv">
+        <div class="usermanagdiv">
+            <div class="usermanagheder">
+                <h2>User Management</h2>
+            </div>
+            <div class="addnew">
+                <a class="userbutton" href="#new user"><img src="image/add.png">Add New User</a>
+            </div>
+        </div>
+        <div class="detl flx">
+            <div class="flx">
+                <input list="User name" type="nane" placeholder="User Name">
+                <datalist id="User name">
+                    <option value="User1">
+                        <option value="User2">
+                </datalist>
+                <input list="User Role" type="nane" placeholder="User Role">
+                <datalist id="User Role">
+                    <option value="Role1">
+                        <option value="Role2">
+                </datalist>
+                <input type="number" placeholder="+49 Phone number">
+                <input type="number" placeholder="Zipcode">
+            </div>
+                <div class="flx">
+                    <input type="submit" id="search" value="Search">
+                    <input type="submit" id="clear" value="Clear">
+                </div>
+        </div>
+        </div>
+        <div class="rightdata">
+
+            <section class="intfs">
+                <table class="table1">
+                    <thead class="">
+                        <tr class="">
+                            <td>Service ID <img src="image/sort.png" alt="date"></td>
+                            <td>Service date <img src="image/sort.png" alt="date"></td>
+                            <td>Customer details<img src="image/sort.png" alt="date"></td>
+                            <td>Service Provider<img src="image/sort.png" alt="date"></td>
+                            <td>Satatus<img src="image/sort.png" alt="date"></td>
+                            <td>Action</td>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td class="date">
+                                <div class="flx calander">
+                                    <img class="cald" src="image/calendar2.png" alt="date">
+                                    <p>09/04/018</p>
+                                </div>
+                                <div class="flx">
+                                    <img class="cald" src="image/layer-14.png" alt="date">
+                                    <p>12:00-8:00</p>
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div class="devid">
+                                    <p>Devid Bough</p>
+                                    <div class="flx">
+                                        <img class="homimg" src="image/layer-15.png" alt="date">
+                                        <p>Musterstrabe 5,12345 Bonn </p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div>
+                                    <div class="flx">
+                                        <div class="cap">
+                                            <img class="capimg" src="image/cap.png" alt="date">
+                                        </div>
+                                        <p>Lyum Watson </p>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <button class="cancl">New</button>
+                            </td>
+                            <td>
+                                <div class="actiondropdown">
+                                    <button class="actiondropbtn"><img src="image/group-38.png" alt="date"></button>
+                                    <div class="actiondropdown-content">
+                                        <a href="#">Edit&amp; Reschedule</a>
+                                        <a href="#">Refund</a>
+                                        <a href="#">Cancel</a>
+                                        <a href="#">Change SP</a>
+                                        <a href="#">Escalate</a>
+                                        <a href="#">History Log</a>
+                                        <a href="#">Download Invoice</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td class="date">
+                                <div class="flx calander">
+                                    <img class="cald" src="image/calendar2.png" alt="date">
+                                    <p>09/04/018</p>
+                                </div>
+                                <div class="flx">
+                                    <img class="cald" src="image/layer-14.png" alt="date">
+                                    <p>12:00-8:00</p>
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div class="devid">
+                                    <p>Devid Bough</p>
+                                    <div class="flx">
+                                        <img class="homimg" src="image/layer-15.png" alt="date">
+                                        <p>Musterstrabe 5,12345 Bonn </p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div>
+                                    <div class="flx">
+                                        <div class="cap">
+                                            <img class="capimg" src="image/cap.png" alt="date">
+                                        </div>
+                                        <p>Lyum Watson </p>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <button class="cancl">New</button>
+                            </td>
+                            <td>
+                                <div class="actiondropdown">
+                                    <button class="actiondropbtn"><img src="image/group-38.png" alt="date"></button>
+                                    <div class="actiondropdown-content">
+                                        <a href="#">Edit&amp; Reschedule</a>
+                                        <a href="#">Refund</a>
+                                        <a href="#">Cancel</a>
+                                        <a href="#">Change SP</a>
+                                        <a href="#">Escalate</a>
+                                        <a href="#">History Log</a>
+                                        <a href="#">Download Invoice</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td class="date">
+                                <div class="flx calander">
+                                    <img class="cald" src="image/calendar2.png" alt="date">
+                                    <p>09/04/018</p>
+                                </div>
+                                <div class="flx">
+                                    <img class="cald" src="image/layer-14.png" alt="date">
+                                    <p>12:00-8:00</p>
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div class="devid">
+                                    <p>Devid Bough</p>
+                                    <div class="flx">
+                                        <img class="homimg" src="image/layer-15.png" alt="date">
+                                        <p>Musterstrabe 5,12345 Bonn </p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div>
+                                    <div class="flx">
+                                        <div class="cap">
+                                            <img class="capimg" src="image/cap.png" alt="date">
+                                        </div>
+                                        <p>Lyum Watson </p>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <button class="cancl">New</button>
+                            </td>
+                            <td>
+                                <div class="actiondropdown">
+                                    <button class="actiondropbtn"><img src="image/group-38.png" alt="date"></button>
+                                    <div class="actiondropdown-content">
+                                        <a href="#">Edit&amp; Reschedule</a>
+                                        <a href="#">Refund</a>
+                                        <a href="#">Cancel</a>
+                                        <a href="#">Change SP</a>
+                                        <a href="#">Escalate</a>
+                                        <a href="#">History Log</a>
+                                        <a href="#">Download Invoice</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td class="date">
+                                <div class="flx calander">
+                                    <img class="cald" src="image/calendar2.png" alt="date">
+                                    <p>09/04/018</p>
+                                </div>
+                                <div class="flx">
+                                    <img class="cald" src="image/layer-14.png" alt="date">
+                                    <p>12:00-8:00</p>
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div class="devid">
+                                    <p>Devid Bough</p>
+                                    <div class="flx">
+                                        <img class="homimg" src="image/layer-15.png" alt="date">
+                                        <p>Musterstrabe 5,12345 Bonn </p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div>
+                                    <div class="flx">
+                                        <div class="cap">
+                                            <img class="capimg" src="image/cap.png" alt="date">
+                                        </div>
+                                        <p>Lyum Watson </p>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <button class="cancl">New</button>
+                            </td>
+                            <td>
+                                <div class="actiondropdown">
+                                    <button class="actiondropbtn"><img src="image/group-38.png" alt="date"></button>
+                                    <div class="actiondropdown-content">
+                                        <a href="#">Edit&amp; Reschedule</a>
+                                        <a href="#">Refund</a>
+                                        <a href="#">Cancel</a>
+                                        <a href="#">Change SP</a>
+                                        <a href="#">Escalate</a>
+                                        <a href="#">History Log</a>
+                                        <a href="#">Download Invoice</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Lyum watson</td>
+                            <td class="date">
+                                <div class="flx calander">
+                                    <img class="cald" src="image/calendar2.png" alt="date">
+                                    <p>09/04/018</p>
+                                </div>
+                                <div class="flx">
+                                    <img class="cald" src="image/layer-14.png" alt="date">
+                                    <p>12:00-8:00</p>
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div class="devid">
+                                    <p>Devid Bough</p>
+                                    <div class="flx">
+                                        <img class="homimg" src="image/layer-15.png" alt="date">
+                                        <p>Musterstrabe 5,12345 Bonn </p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div>
+                                    <div class="flx">
+                                        <div class="cap">
+                                            <img class="capimg" src="image/cap.png" alt="date">
+                                        </div>
+                                        <p>Lyum Watson </p>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <button class="cancl">New</button>
+                            </td>
+                            <td>
+                                <div class="actiondropdown">
+                                    <button class="actiondropbtn"><img src="image/group-38.png" alt="date"></button>
+                                    <div class="actiondropdown-content">
+                                        <a href="#">Edit&amp; Reschedule</a>
+                                        <a href="#">Refund</a>
+                                        <a href="#">Cancel</a>
+                                        <a href="#">Change SP</a>
+                                        <a href="#">Escalate</a>
+                                        <a href="#">History Log</a>
+                                        <a href="#">Download Invoice</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <section class="showenty">
+                    <div class="flx show">
+                        <div>
+                            <h4>show <select style="width: 50px; height: 30px; margin-left: 15px; margin-right: 15px;">
+                                <option value="">10</option>
+                                <option value="">20</option>
+                                <option value="">30</option>
+                            </select> entries</h4>
+                        </div>
+                        <div class="pagination">
+                            <a href="#">«</a>
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">»</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+          </div>
+          <div class="footer"><p class="foot">©2018 Helperland. All rights reserved.</p></div>
+    </section>
+</section>
+<script src="script/home.js"></script>
+</body>
+</html>

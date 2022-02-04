@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style/hederfooter.css">
+    <link rel="stylesheet" href="style/service_provider_become_pro.css">
+    <link rel="image" href="image">
+    <link rel="script" href="script">
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+</head>
+<body>
+    <!-- !PAGE CONTENT header -->
+    <header class="hdr1">
+        <div class="head">
+            <div class="imhlogo"><a href="Homepage.html"><img src='image/logo-large.png' alt="logo" class="logo"></a>
+            </div>
+            <div class="leftblock">
+                <button class="login">bookcleaner</button>
+                <a href="price.html" class="pargaraph">prices</a>
+                <a href="" class="pargaraph">ourguarantee</a>
+                <a href="" class="pargaraph">blog</a>
+                <a href="contact.html" class="pargaraph">Contact</a>
+                <button class="login" onclick="document.getElementById('id01').style.display='block'">Login</button>
+                <button class="login">becomehelper</button>
+            </div>
+            <div class="hembg">
+                <button onclick="w3_open()">☰</button>
+            </div>
+        </div>
+        <!-- !PAGE CONTENT header -->
+        <!-- Sidebar -->
+        <div class="nevdata" onclick="document.getElementById('nevdata').style.display='none'">
+            <div class="w3-sidebar w3-bar-block w3-border-right" id="mySidebar" style="display:none;">
+                <button onclick="w3_close()" class="w3-bar-item w3-large">Close × </button>
+                <a href="#" class="w3-bar-item w3-button">bookcleaner</a>
+                <a href="price.html" class="w3-bar-item w3-button">prices</a>
+                <a href="#" class="w3-bar-item w3-button">ourguarantee</a>
+                <a href="#" class="w3-bar-item w3-button">blog</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+                <a class="w3-bar-item w3-button"
+                    onclick="document.getElementById('id01').style.display='block'">Login</a>
+                <a href="#" class="w3-bar-item w3-button">becomehelper</a>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div id="id01" class="modal">
+            <form class="modal-content animate" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="image/user1.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="backimge" style ="background-image: url(image/become-a-pro-banner.png);">
+            <div class="frm">
+                <h1>REGISTER NOW</h1>
+                <input type="name" placeholder="first name"><br><br>
+                <input type="name" placeholder="last name"><br><br>
+                <input type="email" placeholder="email address"><br><br>
+                <input type="number" placeholder="mobile number"><br><br>
+                <input type="passwrd" placeholder="password"><br><br>
+                <input type="passwrd" placeholder="confirm password"><br><br>
+                <input type="checkbox">
+                <label>Send me newsletters from Helperland</label><br><br>
+                <input type="checkbox">
+                <label>I accept terms and conditions &amp; privacy policy</label><br><br>
+                <iframe
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                    scrolling="no" frameborder="0" name="a-6yfj6gjwyzpx" role="presentation" height="78" width="304"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=your_site_key&amp;co=ZmlsZTo.&amp;hl=en&amp;v=VZKEDW9wslPbEc9RmzMqaOAP&amp;size=normal&amp;cb=yb9ah540r25u"
+                    title="reCAPTCHA"></iframe>
+                <button class="bootn" value="submit">Get Started <img src="image/arrow-white.png" class="bord"
+                        alt=""></button></br></br>
+            </div>
+            <div><img src="image/group-18_5.png" class="dwn" alt=""></div>
+        </div>
+        <section class="center">
+            <h1>How it works</h1>
+            <div class="expsopded">
+                <div class="page3">
+                    <h2>Register yourself</h2>
+                    <p class="">Provide your basic information to register yourself as a service provider.</p>
+                </div>
+                <div class="logoin1">
+                    <img src="image/wom.png" alt="helper" class="grp36">
+                </div>
+            </div>
+            <div class="expsopded">
+                <div class="logoin1">
+                    <img src="image/group-29.png" alt="helper" class="grp36">
+                </div>
+                <div class="page3">
+                    <h2>Get service requests</h2>
+                    <p class="">You will get service requests from customes depend on service area and profile.</p>
+                </div>
+            </div>
+            <div class="expsopded">
+                <div class="page3">
+                    <h2>Complete service</h2>
+                    <p class="">Accept service requests from your customers and complete your work.</p>
+                </div>
+                <div class="logoin1">
+                    <img src="image/group-30.png" alt="helper" class="grp36">
+                </div>
+            </div>
+        </section>
+        <div class="getournews">
+
+            <div class="news">
+                <div class="info">
+                    <button class="upbuttn">
+                        <img class="upbuttnimg" src="image/down-arrow.png">
+                    </button>
+                    <h2 class="getnewhed">GET OUR NEEWS ENTER</h2>
+                    <button class="pnklogo"> <img class="layer" src="image/layer-598.png" alt=""></button>
+                </div>
+                <div class="yoreml">
+                    <input type="email" class="rect" placeholder="your email">
+                    <button class="rect2">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="helpfooter">
+        <div class="Rectangle-12">
+            <div class="ftrnav">
+                <a href="Homepage.html"><img class="smalllogo" src="image/logo-small.png"></a>
+                <div class="homeabout">
+                    <a href="Homepage.html" class="">HOME</a>
+                    <a href="about.html" class="">ABOUT</a>
+                    <a href="" class="">TESTIMONIALS</a>
+                    <a href="FAQ.html" class="">FAQS</a>
+                    <a href="" class="">INSURANCE POLICY</a>
+                    <a href="" class="">IMPRESSUM</a>
+                    <a href="" class="">INSURANCE</a>
+                </div>
+                <div class="social">
+                    <img class="insta" src="image/ic-instagram.png" alt="">
+                    <img class="facebook" src="image/ic-facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="privicy">
+            <p class="privicypolicy">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nunc libero, ac malesuada ligula
+                aliquam ac.<a href=""> Privacy Policy
+                </a></p>
+            <button class="ok">OK!</button>
+        </div>
+    </footer>
+    <script src="script/home.js"></script>
+</body>
+
+</html>
